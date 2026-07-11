@@ -305,6 +305,15 @@
 				<key>device-id</key>
 				<data>EgQAAA==</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device-id</key>
+				<data>KgAAAA==</data>
+				<key>compatible</key>
+				<string>pci168c,2a</string>
+				<key>IOName</key>
+				<string>pci168c,2a</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
@@ -443,6 +452,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>AMFIPass.kext</string>
+				<key>Comment</key>
+				<string>AMFIPass.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AMFIPass</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>20.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>ECEnabler.kext</string>
 				<key>Comment</key>
 				<string>ECEnabler.kext</string>
@@ -569,17 +596,17 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>HS80211Family.kext</string>
+				<string>IO80211ElCap.kext</string>
 				<key>Comment</key>
-				<string>HS80211Family.kext</string>
+				<string>IO80211ElCap.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/HS80211Family</string>
+				<string>Contents/MacOS/IO80211ElCap</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>18.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -594,6 +621,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirPortAtheros40</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>18.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>corecaptureElCap.kext</string>
+				<key>Comment</key>
+				<string>corecaptureElCap.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/corecaptureElCap</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1255,7 +1300,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1290,9 +1335,9 @@
 				<key>SystemAudioVolume</key>
 				<data>fw==</data>
 				<key>boot-args</key>
-				<string></string>
+				<string>ipc_control_port_options=0</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data></data>
 				<key>run-efi-updater</key>
@@ -1361,23 +1406,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02436101J9FH311H</string>
+			<string>C02824301GUGDQP1F</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>LCALIPPq</data>
+			<data>rDwL9M7I</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro11,1</string>
+			<string>MacBookPro11,4</string>
 			<key>SystemSerialNumber</key>
-			<string>C02NC0J2FH00</string>
+			<string>C02WVSY0G8WN</string>
 			<key>SystemUUID</key>
-			<string>4B66E6B2-CBEA-4010-A9A3-78CD8CB7940D</string>
+			<string>F432DA97-4093-4990-9F45-B09AE66E9350</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1512,6 +1557,18 @@
 				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>ResetNvramEntry.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>ResetNvramEntry.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
